@@ -40,13 +40,13 @@
             return false;
         });
 
-    });
-
-    // Remove min-height on iOS after slideshow initialization
+        // Remove min-height on iOS after slideshow initialization
     var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true;
     if(iOS && $('.site-container').css('min-height') == '100vh'){
         $('.site-container').css('min-height', '0');
     }
+
+    });
 
 </script>
 
