@@ -61,6 +61,10 @@ body {
         max-width: @value__container--width;
         margin: 0 auto;
     }
+    @media @mobile {
+        display: block;
+        min-height: inherit;
+    }
 }
 
 // Main
@@ -304,6 +308,13 @@ body {
         }
 
     }
+
+    // Comapny Link
+    .company-link {
+        color: @color__h2--text;
+    }
+
+    // Navigation Toggle Button
     .navigation-toggle {
         background-color: @color__h2--text;
 
