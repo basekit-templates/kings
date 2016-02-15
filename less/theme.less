@@ -115,6 +115,7 @@ body {
     padding: 6px 70px;
     background-color: darken(@color__body--background, 4%);
     border-bottom: 1px solid darken(@color__body--background, 10%);
+    text-align: center;
 
     @media @bp-global-medium {
         padding: 6px 40px;
@@ -173,7 +174,7 @@ body {
 	.container {
 		.flex-display;
 		.justify-content(space-between);
-        .align-items(flex-start);
+        .align-items(center);
 
         @media @mobile {
             display: block;
@@ -253,6 +254,7 @@ body {
         .phone-number-link,
         .company-link,
         .social-link:before,
+        .emailaddress__email,
         .button {
             color: @color__h2--text;
         }

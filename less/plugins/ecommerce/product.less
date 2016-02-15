@@ -66,7 +66,6 @@
     -webkit-flex: 0 1 50%;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    background-color: @color__ecomproduct-images--background;
     padding: 1px 0;
 }
 
@@ -291,12 +290,17 @@
     }
 }
 
+
+
+
 // Image
 // ------------------------------
 
  .product-image .image {
     display: none;
 }
+
+
 
 
 // Product Content
@@ -307,7 +311,7 @@
     -webkit-flex: 0 1 50%;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    background: @color__ecomproduct--background;
+    background: @color__body--background;
     padding: 70px 30px;
 
     @media @bp-global-medium {
@@ -375,39 +379,13 @@
 
 
 
-    // Add to Basket Button
-    // ------------------------------
-
-    .form .button {
-        &.added {
-            background-color: @color__body--background;
-
-            &:before {
-                content: '\f00c'
-            }
-        }
-    }
-
-    // Button
-    .button {
-        background-color: @color__body--background;
-        margin-bottom: 10px;
-
-        &:hover {
-            background-color: darken(@color__ecomproductslist-filters--background, 9%);
-        }
-    }
-
-
-
-
     // Select Wrap
     // ------------------------------
 
     .select-wrap {
         margin-top: 6px;
         padding: 4px 20px 0px 14px;
-        background-color: @color__body--background;
+        background-color: @color__button--background;
 
         &:after {
             padding-right: 14px;
