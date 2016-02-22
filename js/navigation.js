@@ -20,5 +20,5 @@ $( ".navigation-item.folder .item-name--parent" ).each(function() {
 
 
 $( ".extendednavigation__navigation-toggle" ).click(function() {
-    $( "html" ).toggleClass( ".nav-open" );
+    $( "html" ).toggleClass( "nav-open" );
 });
