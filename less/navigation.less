@@ -333,10 +333,10 @@ html.nav-open {
 	// Displays as icon's middle bar
 	background-color: @color__feature-headline--text;
 	background-clip: content-box;
-	width: 42px;
-	height: 47px;
+	width: 40px;
+	height: 46px;
 	margin-left: auto;
-	padding: 22px 10px;
+	padding: 22px 0 22px 10px;
 	position: relative;
 	text-indent: 200%;
 	display: block;
@@ -361,18 +361,15 @@ html.nav-open {
 	// Top and bottom navigation item bar
 	&:after, &:before {
 		content: "";
-		height: 3px;
-		width: 27px;
+		height: 2px;
+		width: 30px;
 		position: absolute;
-		left: 5px;
+		left: 10px;
 		display: block;
 		background: @color__feature-headline--text;
 		margin-right: 0;
 		margin-left: 0;
 
-		@media @mobile {
-			height: 2px;
-		}
 	}
 
 	// Top bar
