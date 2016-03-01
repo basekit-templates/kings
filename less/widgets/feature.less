@@ -149,53 +149,10 @@
 
 .feature__button {
     border: 2px solid @color__feature-button--border;
-    border-width: 2px 0;
     position:relative;
     margin: 20px 0 0;
     color: @color__feature-button--text;
     background-color: @color__feature-button--background;
-
-    &:before,
-    &:after {
-        border: 2px solid @color__feature-button--border;
-        content: "";
-        display:inline-block;
-        border-bottom-width:2px;
-        border-left-width:2px;
-        position:absolute;
-        top:-50%;
-        bottom:50%;
-    }
-
-    &:before {
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
-        -webkit-transform-origin: 0% 100%;
-        -moz-transform-origin: 0% 100%;
-        -ms-transform-origin: 0% 100%;
-        -o-transform-origin: 0% 100%;
-        transform-origin: 0% 100%;
-        left: -1.55em;
-        right: 0;
-    }
-
-    &:after {
-        -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        -webkit-transform-origin: 100% 100%;
-        -moz-transform-origin: 100% 100%;
-        -ms-transform-origin: 100% 100%;
-        -o-transform-origin: 100% 100%;
-        transform-origin: 100% 100%;
-        left: 0;
-        right: -1.55em;
-    }
 
     @media @bp-global-medium, @bp-global-small {
         margin-top: 10px;
