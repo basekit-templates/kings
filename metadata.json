@@ -213,9 +213,9 @@
             "font__feature-strapline--font-weight" : "400",
             "font__feature-strapline--line-height" : "34px",
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing",
-            "color__feature-strapline--text" : "red",
+            "color__feature-strapline--text" : "#ffffff",
             "color__feature-button--text" : "@color__body--background",
-            "color__feature-button--border" : "fade(#ffffff, 20%)",
+            "color__feature-button--border" : "fade(@color__body--background, 10%)",
             "color__feature-button--background" : "transparent"
         },
         "menu": {
