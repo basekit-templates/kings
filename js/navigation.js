@@ -17,3 +17,8 @@ $( ".navigation-item.folder .item-name--parent" ).each(function() {
 			$( this ).parent( ".navigation-item.folder" ).toggleClass( "open" );
 	});
 });
+
+
+$( ".extendednavigation__navigation-toggle" ).click(function() {
+    $( "html" ).toggleClass( "nav-open" );
+});

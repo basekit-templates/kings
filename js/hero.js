@@ -45,7 +45,9 @@ var elem = document.querySelector('.content-inner-wrap');
 
 
 window.onscroll = function(e) {
-    scrollEffect(elem);
+    if (elem) {
+        scrollEffect(elem);
+    }
 };
 
 $( window ).resize(function() {

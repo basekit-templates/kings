@@ -43,7 +43,7 @@
 
 
 body {
-    background-color: darken(@color__body--background, 12%);
+    background-color: @color__body--background;
 }
 
 
@@ -54,7 +54,7 @@ body {
     .flex-direction(column);
     height: 100%;
     min-height: 100vh;
-    background-color: @color__body--background;
+    background-color: @color__container--background;
 
     @media @bp-global-above-fullwidth {
         width: 90%;
@@ -71,7 +71,7 @@ body {
 .main-content {
     position: relative;
     z-index: 50;
-    background-color: @color__body--background;
+    background-color: @color__container--background;
 
     @media @bp-global-large {
         margin-top: @value__widget--spacing--desktop;
@@ -113,8 +113,8 @@ body {
 // Page Title
 .pagetitle {
     padding: 6px 70px;
-    background-color: darken(@color__body--background, 4%);
-    border-bottom: 1px solid darken(@color__body--background, 10%);
+    background-color: darken(@color__container--background, 4%);
+    border-bottom: 1px solid darken(@color__container--background, 10%);
     text-align: center;
 
     @media @bp-global-medium {
@@ -233,17 +233,17 @@ body {
     position: relative;
     z-index: inherit;
     width: 100%;
-    background-color: @color__body--background;
+    background-color: @color__container--background;
     min-height: auto;
-    border-bottom: 1px solid darken(@color__body--background, 10%);
+    border-bottom: 1px solid darken(@color__container--background, 10%);
 
 
     // Flex Item
     @media @mobile {
         .flex-item:first-child,
         .flex-item:last-child {
-            background-color: darken(@color__body--background, 4%);
-            border-bottom: 1px solid darken(@color__body--background, 10%);
+            background-color: darken(@color__container--background, 4%);
+            border-bottom: 1px solid darken(@color__container--background, 10%);
         }
     }
 
@@ -278,7 +278,7 @@ body {
         // Form
         .input {
             color: @color__h2--text;
-            border-color: darken(@color__body--background, 10%);
+            border-color: darken(@color__container--background, 10%);
         }
 
         // Placeholder
@@ -306,7 +306,7 @@ body {
             margin-top: 0;
             padding: 0 10px;
             border-left: 0;
-            border-right: 1px solid darken(@color__body--background, 10%);
+            border-right: 1px solid darken(@color__container--background, 10%);
         }
 
     }
@@ -328,7 +328,7 @@ body {
         background-color: transparent;
 
         &:after, &:before {
-            background: @color__body--background;
+            background: @color__container--background;
         }
     }
 }
@@ -343,8 +343,8 @@ body {
 
 .template-footer {
     width: 100%;
-    background-color: @color__body--background;
-    border-top: 1px solid darken(@color__body--background, 10%);
+    background-color: @color__container--background;
+    border-top: 1px solid darken(@color__container--background, 10%);
     text-align: center;
 
     // Widget
