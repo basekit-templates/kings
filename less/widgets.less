@@ -165,6 +165,11 @@
 // ------------------------------
 
 
+.imagewidget__image {
+    max-height: 600px;
+}
+
+
 // Image Link
 .image-link {
     display: inline-block;
@@ -230,7 +235,7 @@
 .imagewidget__image-title,
 .imagewidget__image-description {
     width: 100%;
-    max-width: 760px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
     -webkit-font-smoothing: antialiased;
@@ -239,19 +244,14 @@
 // Image Title
 .responsiveslideshow__image-title,
 .imagewidget__image-title {
-    margin-bottom: 10px;
     font-family: @font__feature-headline--font-family;
-    font-size: @font__feature-headline--font-size;
+    font-size: 32px;
     font-weight: @font__feature-headline--font-weight;
-    line-height: @font__feature-headline--line-height;
-    letter-spacing: @font__feature-headline--letter-spacing;
+    line-height: 40px;
+    letter-spacing: 2px;
     color: @color__feature-headline--text;
     text-transform: uppercase;
 
-    @media @bp-global-medium {
-        font-size: 36px;
-        line-height: 46px;
-    }
     @media @tablet {
         font-size: 28px;
         line-height: 32px;
