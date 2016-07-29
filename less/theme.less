@@ -50,20 +50,12 @@ body {
 // Site Container
 .site-container {
     width: 100%;
-    .flex-display;
-    .flex-direction(column);
-    height: 100%;
-    min-height: 100vh;
     background-color: @color__container--background;
 
     @media @bp-global-above-fullwidth {
         width: 90%;
         max-width: @value__container--width;
         margin: 0 auto;
-    }
-    @media @mobile {
-        display: block;
-        min-height: inherit;
     }
 }
 
